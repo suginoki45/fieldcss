@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "YuGothic-M";
+  font-weight: normal;
+  src: local("YuGothic-Medium"), local("Yu Gothic Medium"),
+    local("YuGothic-Regular");
+}
+
+@font-face {
+  font-family: "YuGothic-M";
+  font-weight: bold;
+  src: local("YoGothic-Bold"), local("Yu Gothic");
+}
+
+html {
+  font-size: $default-font-size;
+}
+
+body {
+  font-family: -apple-system, blinkMacSystemFont, YuGothic-M, YuGothic,
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "palt";
+}
+
+button {
+  border: none;
+  font-size: 1rem;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  ::i-block-chrome,
+  body {
+    font-feature-settings: "pkna";
+  }
+}

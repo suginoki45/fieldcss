@@ -1,0 +1,89 @@
+$button-text-color: #fff !default;
+$button-primary-text-color: #fff !default;
+$button-background-color: #193bc9 !default;
+$button-primary-background-color: #f93947 !default;
+$button-border-color: #dbdbdb !default;
+$button-border-radius: 4px !default;
+$button-padding: 0.5em 1em !default;
+$button-rounded-border-radius: 9999px !default;
+$button-circle-size: 40px !default;
+
+.#{$prefix} {
+  $prefix: &;
+  &-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    #{$prefix}-button {
+      margin-bottom: 0.5rem;
+      &:not(:last-child):not(.is-fullWidth) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  &-button {
+    $this: &;
+    display: inline-block;
+    cursor: pointer;
+    padding: $button-padding;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid $button-border-color;
+    border-radius: $button-border-radius;
+    &.is-basic,
+    &.is-primary {
+      border: none;
+    }
+    &.is-basic {
+      color: $button-text-color;
+      background: linear-gradient(
+        to left,
+        $button-background-color,
+        lighten($button-background-color, 10%)
+      );
+    }
+    &.is-primary {
+      color: $button-text-color;
+      background: linear-gradient(
+        to left,
+        $button-primary-background-color,
+        lighten($button-primary-background-color, 10%)
+      );
+    }
+    &.is-outline {
+      border-width: 1px;
+      border-style: solid;
+      background: transparent;
+      &.is-basic {
+        color: $button-background-color;
+        border-color: $button-background-color;
+      }
+      &.is-primary {
+        color: $button-primary-background-color;
+        border-color: $button-primary-background-color;
+      }
+    }
+    &.is-rounded {
+      border-radius: $button-rounded-border-radius;
+    }
+    &.is-circle {
+      width: $button-circle-size;
+      height: $button-circle-size;
+      padding: 0;
+      line-height: 1;
+      border-radius: 50%;
+    }
+    &.is-fullWidth {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+@for $i from 1 through 24 {
+  .is-depth-#{$i} {
+    $z-index: #{$i}px;
+    box-shadow: 0 3px $z-index rgba(#000, 0.2);
+  }
+}

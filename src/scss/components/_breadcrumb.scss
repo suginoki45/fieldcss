@@ -1,0 +1,37 @@
+$breadcrumb-item-color: $link-color-base !default;
+$breadcrumb-item-color-active: $base-text-color !default;
+
+.#{$prefix} {
+  &-breadcrumb {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+      list-style-type: none;
+    }
+    li {
+      &:first-child a {
+        padding-left: 0;
+      }
+      &.is-active a {
+        pointer-events: none;
+        cursor: default;
+        color: $breadcrumb-item-color-active;
+        text-decoration: none;
+      }
+      + li {
+        &::before {
+          content: ">";
+        }
+      }
+    }
+    a {
+      padding: 0 0.75em;
+      color: $breadcrumb-item-color;
+      i[class*="fa"] {
+        margin-right: 0.3rem;
+      }
+    }
+  }
+}

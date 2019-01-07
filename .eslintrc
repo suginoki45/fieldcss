@@ -1,0 +1,10 @@
+{
+	"env": {
+		"es6": true,
+		"amd": true
+  },
+	"extends": "eslint:recommended",
+	"rules": {
+		"quotes": ["error", "single"]
+	}
+}

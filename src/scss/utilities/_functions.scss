@@ -1,0 +1,20 @@
+@function strip-unit($number) {
+  @if (type-of($number) == "number" and not unitless($number)) {
+    @return $number;
+  }
+
+  @return $number / ($number * 0 + 1);
+}
+
+@function px2em($number, $parent-number: $default-font-size) {
+  $result: $number;
+
+  // 単位がpx以外なら値をそのまま返す
+  @if (not(unit($number) == "px")) {
+    @return $result;
+  }
+
+  $result: strip-unit($number / $parent-number) * 1em;
+
+  @return $result;
+}

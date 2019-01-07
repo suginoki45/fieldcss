@@ -1,0 +1,31 @@
+.#{$prefix} {
+  &-heading {
+    color: #333;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.125;
+    &[class*="is-lv"] {
+      font-weight: bold;
+    }
+    &.is-lv1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    &.is-lv2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    &.is-lv3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    &.is-lv4 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    &.is-lv5 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
