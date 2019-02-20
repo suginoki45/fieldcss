@@ -1,0 +1,20 @@
+$content-blockquote-background-color: #eeeeee !default;
+$blockquote-border-radius: 6px !default;
+
+.#{$prefix} {
+  &-blockquote {
+    background-color: $content-blockquote-background-color;
+    border-radius: $blockquote-border-radius;
+    padding: 1rem 1.5rem;
+    display: block;
+    cite {
+      display: block;
+      margin-top: .5rem;
+      text-align: right;
+      &::before {
+          content: "\2014";
+          padding-right: .5rem;
+      }
+    }
+  }
+}
