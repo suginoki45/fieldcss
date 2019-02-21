@@ -1,0 +1,43 @@
+$content-table-border-color: #dbdbdb !default;
+$content-tr-background-color: #f7f7f7 !default;
+$content-th-background-color: #e7e7e7 !default;
+
+.#{$prefix} {
+  &-table {
+    th,td {
+        padding: .5em .75em; 
+    }
+    thead th {
+        border-bottom: 2px solid $content-table-border-color;
+    }
+    tr {
+        border-bottom: 1px solid $content-table-border-color;
+    }
+    &.is-striped {
+        tr:nth-child(even) {
+            background-color: $content-tr-background-color;
+        }
+    }
+    &.is-fullwidth {
+        width: 100%;
+    }
+    &.is-bordered {
+        th,td {
+            border: 1px solid $content-table-border-color;
+        }
+        th {
+            background-color: $content-th-background-color;
+        }
+    }
+    &.is-hoverable {
+        tbody tr:hover {
+            background-color: $content-tr-background-color;
+        }
+    }
+    &.is-responsive {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+  }
+}
