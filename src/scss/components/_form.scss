@@ -1,37 +1,10 @@
 $content-form-background-color: #e7e7e7 !default;
 $content-form-border-color: #dbdbdb !default;
 $form-border-radius: 6px !default;
+$form-label-text-color: #f93947 !default;
 
 .#{$prefix} {
-  &-selectbox {
-    position: relative;
-    display: inline-block;
-    &::before {
-        position: absolute;
-        content: '';
-        width: 40px;
-        height: 50px;
-        right: 0px;
-        background-color: $content-form-background-color;
-        border-top-right-radius: $form-border-radius;
-        border-bottom-right-radius: $form-border-radius;
-    }
-    &::after {
-        position: absolute;
-        content: '';
-        width: 6px;
-        height: 6px;
-        border: 0px;
-        border-bottom: 1px solid #333;
-        border-right: 1px solid #333;
-        -ms-transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-        top: 50%;
-        right: 16px;
-        margin-top: -4px;
-    }
-    &__inner {
+    &-selectbox {
         appearance: none;
         width: 100%;
         height: 50px;
@@ -42,13 +15,67 @@ $form-border-radius: 6px !default;
         border: 1px solid $content-form-border-color;
         border-radius: $form-border-radius;
         font-size: inherit;
-      &::-ms-expand {
-        display: none;
-      }
-      &:-moz-focusring {
-        color: transparent; 
-        text-shadow: 0 0 0 #3c3c3c;
-      }
+        &::-ms-expand {
+            display: none;
+        }
+        &:-moz-focusring {
+            color: transparent; 
+            text-shadow: 0 0 0 #3c3c3c;
+        }
+        &-container {
+            position: relative;
+            display: block;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 40px;
+            height: 50px;
+            right: 0px;
+            background-color: $content-form-background-color;
+            border-top-right-radius: $form-border-radius;
+            border-bottom-right-radius: $form-border-radius;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            width: 6px;
+            height: 6px;
+            border: 0px;
+            border-bottom: 1px solid #333;
+            border-right: 1px solid #333;
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            top: 50%;
+            right: 16px;
+            margin-top: -4px;
+        }
     }
   }
+  &-form {
+        + .#{$prefix}-form {
+        margin-top: 1.5rem;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: .3rem;
+            display: block;
+        }
+        &__item {
+            font-size: .8rem;
+            margin-left: .5rem;
+            &.is-required {
+                color: $form-label-text-color;
+            }
+        }
+        &__control {
+            appearance: none;
+            width: 100%;
+            display: block;
+            padding: .9rem;
+            font-size: 1rem;
+            border-radius: $form-border-radius;
+            border: 1px solid $content-form-border-color;
+        }
+    }
 }

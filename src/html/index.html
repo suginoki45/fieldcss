@@ -418,15 +418,27 @@
           </h1>
           <section class="fd-section">
             <div class="fd-inner">
-              <h2 class="fd-heading is-lv2">セレクトボックス</h2>
-              <div class="fd-selectbox">
-                <select class="fd-selectbox__inner">
-                  <option>選択してください</option>
-                  <option>01</option>
-                  <option>02</option>
-                  <option>03</option>
-                </select>
-              </div>
+              <form>
+                <div class="fd-form">
+                  <label for="name">お名前<span class="fd-form__item is-required">必須</span></label>
+                  <input type="text" class="fd-form__control" id="name" placeholder="名前" autocomplete="name" required>
+                </div>
+                <div class="fd-form">
+                  <label for="email">メールアドレス<span class="fd-form__item is-required">必須</span></label>
+                  <input type="text" class="fd-form__control" id="email" placeholder="メールアドレス" autocomplete="email" required>
+                </div>
+                <div class="fd-form">
+                    <label for="">セレクトボックス</label>
+                    <div class="fd-selectbox-container">
+                      <select class="fd-selectbox">
+                        <option>選択してください</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                      </select>
+                    </div>
+                  </div>
+              </form>
             </div>
           </section>
         </div>

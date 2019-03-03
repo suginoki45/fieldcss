@@ -441,34 +441,6 @@ Spacing
 }
 
 .fd-selectbox {
-  position: relative;
-  display: inline-block;
-}
-.fd-selectbox::before {
-  position: absolute;
-  content: "";
-  width: 40px;
-  height: 50px;
-  right: 0px;
-  background-color: #e7e7e7;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-}
-.fd-selectbox::after {
-  position: absolute;
-  content: "";
-  width: 6px;
-  height: 6px;
-  border: 0px;
-  border-bottom: 1px solid #333;
-  border-right: 1px solid #333;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: 50%;
-  right: 16px;
-  margin-top: -4px;
-}
-.fd-selectbox__inner {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -482,12 +454,66 @@ Spacing
   border-radius: 6px;
   font-size: inherit;
 }
-.fd-selectbox__inner::-ms-expand {
+.fd-selectbox::-ms-expand {
   display: none;
 }
-.fd-selectbox__inner:-moz-focusring {
+.fd-selectbox:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #3c3c3c;
+}
+.fd-selectbox-container {
+  position: relative;
+  display: block;
+}
+.fd-selectbox-container::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 50px;
+  right: 0px;
+  background-color: #e7e7e7;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.fd-selectbox-container::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border: 0px;
+  border-bottom: 1px solid #333;
+  border-right: 1px solid #333;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 50%;
+  right: 16px;
+  margin-top: -4px;
+}
+.fd-form + .fd-form {
+  margin-top: 1.5rem;
+}
+.fd-form label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+.fd-form__item {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+.fd-form__item.is-required {
+  color: #f93947;
+}
+.fd-form__control {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  display: block;
+  padding: 0.9rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #dbdbdb;
 }
 
 .fd-container {
