@@ -492,7 +492,7 @@ Spacing
 .fd-form + .fd-form {
   margin-top: 1.5rem;
 }
-.fd-form label {
+.fd-form__label {
   font-weight: bold;
   margin-bottom: 0.3rem;
   display: block;
@@ -514,6 +514,20 @@ Spacing
   font-size: 1rem;
   border-radius: 6px;
   border: 1px solid #dbdbdb;
+}
+.fd-form__radio {
+  display: block;
+}
+.fd-form__radio input {
+  margin-right: 0.2rem;
+}
+@media (min-width: 48.125em) {
+  .fd-form__radio {
+    display: inline;
+  }
+  .fd-form__radio + .fd-form__radio {
+    margin-left: 1rem;
+  }
 }
 
 .fd-container {

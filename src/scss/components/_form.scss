@@ -56,7 +56,7 @@ $form-label-text-color: #f93947 !default;
         + .#{$prefix}-form {
         margin-top: 1.5rem;
         }
-        label {
+        &__label {
             font-weight: bold;
             margin-bottom: .3rem;
             display: block;
@@ -76,6 +76,18 @@ $form-label-text-color: #f93947 !default;
             font-size: 1rem;
             border-radius: $form-border-radius;
             border: 1px solid $content-form-border-color;
+        }
+        &__radio {
+            display: block;
+            input {
+                margin-right: .2rem;
+            }
+            @include mq(tablet) {
+                display: inline;
+                + .#{$prefix}-form__radio {
+                    margin-left: 1rem;
+                }
+            }
         }
     }
 }
