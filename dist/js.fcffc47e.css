@@ -517,16 +517,45 @@ Spacing
 }
 .fd-form__radio {
   display: block;
+  padding-left: 1rem;
+  text-indent: -1rem;
 }
 .fd-form__radio input {
   margin-right: 0.2rem;
 }
+.fd-form__radio + .fd-form__radio {
+  margin-top: 0.5rem;
+}
 @media (min-width: 48.125em) {
   .fd-form__radio {
     display: inline;
+    padding-left: 0;
   }
   .fd-form__radio + .fd-form__radio {
     margin-left: 1rem;
+    margin-top: 0;
+  }
+}
+.fd-form__check {
+  cursor: pointer;
+  display: block;
+  padding-left: 1rem;
+  text-indent: -1rem;
+}
+.fd-form__check input {
+  margin-right: 0.2rem;
+}
+.fd-form__check + .fd-form__check {
+  margin-top: 0.5rem;
+}
+@media (min-width: 48.125em) {
+  .fd-form__check {
+    display: inline;
+    padding-left: 0;
+  }
+  .fd-form__check + .fd-form__check {
+    margin-left: 1rem;
+    margin-top: 0;
   }
 }
 

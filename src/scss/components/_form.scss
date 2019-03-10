@@ -79,13 +79,40 @@ $form-label-text-color: #f93947 !default;
         }
         &__radio {
             display: block;
+            padding-left: 1rem;
+            text-indent: -1rem;
             input {
                 margin-right: .2rem;
             }
+            + .#{$prefix}-form__radio {
+                margin-top: .5rem;
+            }
             @include mq(tablet) {
                 display: inline;
+                padding-left: 0;
                 + .#{$prefix}-form__radio {
                     margin-left: 1rem;
+                    margin-top: 0;
+                }
+            }
+        }
+        &__check {
+            cursor: pointer;
+            display: block;
+            padding-left: 1rem;
+            text-indent: -1rem;
+            input {
+                margin-right: .2rem;
+            }
+            + .#{$prefix}-form__check {
+                margin-top: .5rem;
+            }
+            @include mq(tablet) {
+                display: inline;
+                padding-left: 0;
+                + .#{$prefix}-form__check {
+                    margin-left: 1rem;
+                    margin-top: 0;
                 }
             }
         }
