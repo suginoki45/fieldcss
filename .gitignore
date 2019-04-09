@@ -3,3 +3,4 @@
 node_modules
 composer-dev.json
 composer-dev.lock
+dist
