@@ -1,0 +1,234 @@
+{
+    "project_logo": null,
+    "project_favicon": "favicon.png",
+    "project_name": null,
+    "project_url": null,
+    "copyright_start_year": null,
+    "client_name": null,
+    "client_url": null,
+    "creators": [
+        {
+            "name": null,
+            "url": null
+        }
+    ],
+    "theme": {
+        "border_color": "#E0E6ED",
+        "highlight_color": "#F9FAFC",
+        "brand_color": "#00585C",
+        "background_color": "#FFFFFF",
+        "code_highlight_theme": "github",
+        "override_code_highlight_bg": "#F9FAFC",
+        "sample_dark_background": "#333333",
+        "show_project_name": true,
+        "show_version": true,
+        "max_width": null,
+        "titles": {
+            "library_title": "Pattern Library",
+            "pages_title": "Overview",
+            "components_title": "Components"
+        }
+    },
+    "assets": {
+        "css": [
+            "/dist/css/bundle.css"
+        ],
+        "js": []
+    },
+    "font_libraries": {
+        "typekit_code": null,
+        "typography_web_fonts": null,
+        "google_web_fonts": null
+    },
+    "content": {
+        "show_first_page_on_load": true,
+        "title": "Overview",
+        "pages": [
+            {
+                "name": "introduction",
+                "title": "Introduction",
+                "file": "./pages/intro.md"
+            }
+        ]
+    },
+    "groups": [
+        {
+            "name": "headings",
+            "title": "Headings",
+            "components": [
+                {
+                    "group": "headings",
+                    "name": "level1",
+                    "title": "Level1 heading"
+                },
+                {
+                    "group": "headings",
+                    "name": "level2",
+                    "title": "Level2 heading"
+                },
+                {
+                    "group": "headings",
+                    "name": "level3",
+                    "title": "Level3 heading"
+                },
+                {
+                    "group": "headings",
+                    "name": "level4",
+                    "title": "Level4 heading"
+                },
+                {
+                    "group": "headings",
+                    "name": "level5",
+                    "title": "Level5 heading"
+                }
+            ]
+        },
+        {
+            "name": "buttons",
+            "title": "Buttons",
+            "components": [
+                {
+                    "group": "buttons",
+                    "name": "plane",
+                    "title": "Plane"
+                },
+                {
+                    "group": "buttons",
+                    "name": "colored",
+                    "title": "Colored"
+                },
+                {
+                    "group": "buttons",
+                    "name": "outline",
+                    "title": "Outline"
+                },
+                {
+                    "group": "buttons",
+                    "name": "rounded",
+                    "title": "Rounded"
+                },
+                {
+                    "group": "buttons",
+                    "name": "circle",
+                    "title": "Circle"
+                },
+                {
+                    "group": "buttons",
+                    "name": "full-width",
+                    "title": "Full width"
+                },
+                {
+                    "group": "buttons",
+                    "name": "shadowed",
+                    "title": "Shadowed"
+                }
+            ]
+        },
+        {
+            "name": "breadcrumb",
+            "title": "Breadcrumb",
+            "components": [
+                {
+                    "group": "breadcrumb",
+                    "name": "plane",
+                    "title": "Plane"
+                },
+                {
+                    "group": "breadcrumb",
+                    "name": "icon",
+                    "title": "icon"
+                }
+            ]
+        },
+        {
+            "name": "card",
+            "title": "Card",
+            "components": [
+                {
+                    "group": "card",
+                    "name": "plane",
+                    "title": "plane"
+                },
+                {
+                    "group": "card",
+                    "name": "rounded",
+                    "title": "Rounded"
+                }
+            ]
+        },
+        {
+            "name": "brockquote",
+            "title": "Brockquote",
+            "components": [
+                {
+                    "group": "brockquote",
+                    "name": "plane",
+                    "title": "plane"
+                }
+            ]
+        },
+        {
+            "name": "table",
+            "title": "Table",
+            "components": [
+                {
+                    "group": "table",
+                    "name": "plane",
+                    "title": "plane"
+                },
+                {
+                    "group": "table",
+                    "name": "stripe",
+                    "title": "Stripe"
+                },
+                {
+                    "group": "table",
+                    "name": "full-width",
+                    "title": "Full width"
+                },
+                {
+                    "group": "table",
+                    "name": "bordered",
+                    "title": "Bordered"
+                },
+                {
+                    "group": "table",
+                    "name": "hoverable",
+                    "title": "Hoverable"
+                },
+                {
+                    "group": "table",
+                    "name": "responsive",
+                    "title": "Responsive (x-scroll)"
+                }
+            ]
+        },
+        {
+            "name": "form",
+            "title": "Form",
+            "components": [
+                {
+                    "group": "form",
+                    "name": "input",
+                    "title": "Input"
+                },
+                {
+                    "group": "form",
+                    "name": "radio",
+                    "title": "Radio"
+                },
+                {
+                    "group": "form",
+                    "name": "checkbox",
+                    "title": "Checkbox"
+                },
+                {
+                    "group": "form",
+                    "name": "textarea",
+                    "title": "Textarea"
+                }
+            ]
+        }
+    ],
+    "version": "1.9.5"
+}
