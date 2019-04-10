@@ -31,7 +31,7 @@
     },
     "assets": {
         "css": [
-            "/dist/css/bundle.css"
+            "/dist/css/bundle.min.css"
         ],
         "js": []
     },
