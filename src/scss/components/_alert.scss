@@ -1,0 +1,21 @@
+$alert-border-radius: 6px !default;
+$alert-error-text-color: #f93947 !default;
+$alert-error-background-color: #ffeef3 !default;
+$alert-primary-text-color: #3F51B5 !default;
+$alert-primary-background-color: #e9f7f9 !default;
+
+.#{$prefix} {
+    &-alert {
+        padding: .8rem 1.25rem;
+        border-radius: $alert-border-radius;
+        margin: 1rem 0 2rem;
+        &-error {
+            background-color: $alert-error-background-color;
+            color: $alert-error-text-color;
+        }
+        &-primary {
+            background-color: $alert-primary-background-color;
+            color: $alert-primary-text-color;
+        }
+    }
+}

@@ -53,6 +53,17 @@
     },
     "groups": [
         {
+            "name": "alert",
+            "title": "Alert",
+            "components": [
+                {
+                    "group": "alert",
+                    "name": "plane",
+                    "title": "Plane"
+                }
+            ]
+        },
+        {
             "name": "headings",
             "title": "Headings",
             "components": [
