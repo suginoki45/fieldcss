@@ -2,6 +2,7 @@ $content-form-background-color: #e7e7e7 !default;
 $content-form-border-color: #dbdbdb !default;
 $form-border-radius: 6px !default;
 $form-label-text-color: #f93947 !default;
+$form-error-bg-color: #fb6b75 !default;
 
 .#{$prefix} {
     &-selectbox {
@@ -115,6 +116,18 @@ $form-label-text-color: #f93947 !default;
                     margin-top: 0;
                 }
             }
+        }
+        &-error {
+            .#{$prefix}-form__control,
+            .#{$prefix}-selectbox {
+                border: 1px solid $form-error-bg-color;
+            }
+        }
+        &__errortxt {
+            color: $form-label-text-color;
+            display: block;
+            font-size: .9rem;
+            margin: .4rem .2rem;
         }
     }
 }

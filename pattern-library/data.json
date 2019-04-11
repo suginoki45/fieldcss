@@ -209,6 +209,11 @@
             "components": [
                 {
                     "group": "form",
+                    "name": "general",
+                    "title": "General"
+                },
+                {
+                    "group": "form",
                     "name": "input",
                     "title": "Input"
                 },
