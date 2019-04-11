@@ -1,3 +1,5 @@
+$list-border-color: #dbdbdb !default;
+
 .#{$prefix} {
     &-list {
         &-disc {
@@ -34,6 +36,15 @@
                 text-indent: -1.6rem;
                 &::before {
                     content: "(" counter(cnt) ") ";
+                }
+            }
+        }
+        &-line {
+            &__item {
+                padding: .8rem 0;
+                border-bottom: solid 1px $list-border-color;
+                &:first-child {
+                    border-top: solid 1px $list-border-color;
                 }
             }
         }

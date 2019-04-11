@@ -196,6 +196,11 @@
                     "group": "list",
                     "name": "parenthesis",
                     "title": "Parenthesis"
+                },
+                {
+                    "group": "list",
+                    "name": "line",
+                    "title": "Line"
                 }
             ]
         },
