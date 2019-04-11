@@ -1,0 +1,23 @@
+.#{$prefix} {
+    &-list {
+        &-disc {
+            &__item {
+                position: relative;
+                padding-left: 1.2rem;
+                margin-bottom: .5rem;
+                &::before {
+                    position: absolute;
+                    top: .8rem;
+                    left: 0;
+                    content: "";
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: $color-main;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}

@@ -179,6 +179,17 @@
             ]
         },
         {
+            "name": "list",
+            "title": "List",
+            "components": [
+                {
+                    "group": "list",
+                    "name": "dot",
+                    "title": "Dot"
+                }
+            ]
+        },
+        {
             "name": "table",
             "title": "Table",
             "components": [
