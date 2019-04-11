@@ -1,6 +1,6 @@
-$content-table-border-color: #dbdbdb !default;
-$content-tr-background-color: #f7f7f7 !default;
-$content-th-background-color: #e7e7e7 !default;
+$table-border-color: #dbdbdb !default;
+$tr-background-color: #f7f7f7 !default;
+$th-background-color: #e7e7e7 !default;
 
 .#{$prefix} {
   &-table {
@@ -8,14 +8,14 @@ $content-th-background-color: #e7e7e7 !default;
         padding: .5em .75em; 
     }
     thead th {
-        border-bottom: 2px solid $content-table-border-color;
+        border-bottom: 2px solid $table-border-color;
     }
     tr {
-        border-bottom: 1px solid $content-table-border-color;
+        border-bottom: 1px solid $table-border-color;
     }
     &.is-striped {
         tr:nth-child(even) {
-            background-color: $content-tr-background-color;
+            background-color: $tr-background-color;
         }
     }
     &.is-fullwidth {
@@ -23,15 +23,15 @@ $content-th-background-color: #e7e7e7 !default;
     }
     &.is-bordered {
         th,td {
-            border: 1px solid $content-table-border-color;
+            border: 1px solid $table-border-color;
         }
         th {
-            background-color: $content-th-background-color;
+            background-color: $th-background-color;
         }
     }
     &.is-hoverable {
         tbody tr:hover {
-            background-color: $content-tr-background-color;
+            background-color: $tr-background-color;
         }
     }
     &.is-responsive {

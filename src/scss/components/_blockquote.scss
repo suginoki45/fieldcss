@@ -1,9 +1,9 @@
-$content-blockquote-background-color: #eeeeee !default;
+$blockquote-background-color: #eeeeee !default;
 $blockquote-border-radius: 6px !default;
 
 .#{$prefix} {
   &-blockquote {
-    background-color: $content-blockquote-background-color;
+    background-color: $blockquote-background-color;
     border-radius: $blockquote-border-radius;
     padding: 1rem 1.5rem;
     display: block;
