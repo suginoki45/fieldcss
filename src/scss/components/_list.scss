@@ -25,5 +25,17 @@
                 margin-bottom: .5rem;
             }
         }
+        &-parenthesis {
+            padding-left: 1.6rem;
+            list-style-type: none;
+            &__item {
+                margin-bottom: .5rem;
+                counter-increment: cnt;
+                text-indent: -1.6rem;
+                &::before {
+                    content: "(" counter(cnt) ") ";
+                }
+            }
+        }
     }
 }

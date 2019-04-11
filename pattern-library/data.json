@@ -191,6 +191,11 @@
                     "group": "list",
                     "name": "number",
                     "title": "Number"
+                },
+                {
+                    "group": "list",
+                    "name": "parenthesis",
+                    "title": "Parenthesis"
                 }
             ]
         },
