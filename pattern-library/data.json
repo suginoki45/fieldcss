@@ -186,6 +186,11 @@
                     "group": "list",
                     "name": "dot",
                     "title": "Dot"
+                },
+                {
+                    "group": "list",
+                    "name": "number",
+                    "title": "Number"
                 }
             ]
         },
