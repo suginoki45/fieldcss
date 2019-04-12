@@ -1,4 +1,3 @@
-$breadcrumb-item-color: $link-color-base !default;
 $breadcrumb-item-color-active: $base-text-color !default;
 
 .#{$prefix} {
@@ -28,7 +27,6 @@ $breadcrumb-item-color-active: $base-text-color !default;
     }
     a {
       padding: 0 0.75em;
-      color: $breadcrumb-item-color;
       i[class*="fa"] {
         margin-right: 0.3rem;
       }

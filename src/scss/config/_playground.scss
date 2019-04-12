@@ -20,16 +20,29 @@ body {
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   -webkit-text-size-adjust: 100%;
   font-feature-settings: "palt";
+  letter-spacing: 1px;
+  line-height: 1.6;
 }
 
 button {
   border: none;
   font-size: 1rem;
+  &:hover {
+    transition: all .3s;
+    opacity: .8;
+  }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   ::i-block-chrome,
   body {
     font-feature-settings: "pkna";
+  }
+}
+a {
+  color: $link-color-base;
+  &:hover {
+    transition: all .3s;
+    opacity: .8;
   }
 }
