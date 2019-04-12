@@ -3,29 +3,43 @@
     color: #333;
     font-size: 2rem;
     font-weight: 700;
-    line-height: 1.125;
+    line-height: 1.3;
     &[class*="is-lv"] {
       font-weight: bold;
     }
     &.is-lv1 {
-      font-size: 3rem;
+      font-size: 1.7rem;
       margin-bottom: 1rem;
+      @include mq(tablet) {
+        font-size: 2.25rem;
+      }
     }
     &.is-lv2 {
-      font-size: 2.5rem;
+      font-size: 1.4rem;
       margin-bottom: 1rem;
+      @include mq(tablet) {
+        font-size: 1.8rem;
+      }
     }
     &.is-lv3 {
-      font-size: 2rem;
+      font-size: 1.2rem;
       margin-bottom: 1rem;
+      @include mq(tablet) {
+        font-size: 1.5rem;
+      }
     }
     &.is-lv4 {
-      font-size: 1.5rem;
+      font-size: 1.125rem;
       margin-bottom: 1rem;
+      line-height: 1.4;
+      @include mq(tablet) {
+        font-size: 1.25rem;
+      }
     }
     &.is-lv5 {
       font-size: 1rem;
       margin-bottom: 1rem;
+      line-height: 1.5;
     }
   }
 }
