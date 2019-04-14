@@ -5,17 +5,13 @@
   "scripts": {
     "start": "npm-run-all -p server watch",
     "server": "webpack-dev-server",
-
     "compile-sass": "node-sass --include-path scss ./src/scss/bundle.scss ./dist/css/bundle.min.css",
     "autoprefixer": "postcss ./dist/css/bundle.min.css --use autoprefixer -d ./dist/css",
-
     "dev:sass": "npm-run-all -s styles:*",
     "dev:scripts": "webpack",
-
     "watch:sass": "node-sass --include-path scss ./src/scss/bundle.scss ./dist/css/bundle.min.css -w",
     "watch:scripts": "webpack --watch",
     "watch": "npm-run-all -p watch:*",
-
     "release:clean": "trash ./dist",
     "release:mkdir": "mkdirp ./dist",
     "release:css": "node-sass --include-path scss ./src/scss/bundle.scss ./dist/css/bundle.min.css --output-style compressed",
@@ -48,6 +44,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.8.1",
     "aos": "^3.0.0-beta.6",
+    "jquery": "^3.4.0",
     "minireset.css": "0.0.4"
   }
 }

@@ -33,7 +33,9 @@
         "css": [
             "/dist/css/bundle.min.css"
         ],
-        "js": []
+        "js": [
+            "/dist/js/bundle.min.js"
+        ]
     },
     "font_libraries": {
         "typekit_code": null,
@@ -52,6 +54,17 @@
         ]
     },
     "groups": [
+        {
+            "name": "header",
+            "title": "Header",
+            "components": [
+                {
+                    "group": "header",
+                    "name": "hamburger",
+                    "title": "Hamburger"
+                }
+            ]
+        },
         {
             "name": "alert",
             "title": "Alert",

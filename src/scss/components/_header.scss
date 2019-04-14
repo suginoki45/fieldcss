@@ -1,0 +1,28 @@
+.#{$prefix} {
+    &-header {
+        height: 80px;
+        &__logo {
+            width: 30px;
+        }
+        &__toggle {
+        }
+        &__hamburger {
+            display: block;
+            position: relative;
+            cursor: pointer;
+
+            .fas {
+                display: block;
+                font-size: 24px;
+        
+                @include mq(tablet) {
+                    font-size: 26px;
+                }
+            }
+            .fa-times {
+                display: none;
+            }
+        }
+    }
+}
+
