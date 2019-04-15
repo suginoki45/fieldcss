@@ -6,8 +6,29 @@ $tablet: 769px + ($gutter * 2) !default;
 $desktop: 960px + ($gutter * 2) !default;
 $widescreen: 1152px + ($gutter * 2) !default;
 
+// Colors
+$black: #3c3c3c !default;
+$gray: #f4f6f8 !default;
+$white: #fff !default;
+$red: #ca4e87 !default;
+$indigo: #102641 !default;
+$emerald: #4ecac2 !default;
+
+// Fonts
+$base-font-family: "游ゴシック体", yugothic, "游ゴシック", "Yu Gothic",
+	"メイリオ", sans-serif;
+$heading-font-family: "Barlow", sans-serif;
+$base-line-height: 1.75;
+
 $default-font-size: 16px !default;
 $color-main: #26a69a !default;
 $base-text-color: #333333 !default;
 
 $link-color-base: #26a69a;
+
+$mq-breakpoints: (
+	mobile: 500px,
+	tablet: 700px,
+	desktop: 1000px,
+	wide: 1040px
+);

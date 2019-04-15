@@ -1,7 +1,4 @@
-import anime from './anime.js';
-import Hamburger from './hamburger.js';
+import GLDrawer from './drawer.js';
 
-document.addEventListener('DOMContentLoaded', function(event) {
-  anime();
-  const hamburger = new Hamburger('.js-hamburger', '#js-gnav', 'click');
-});
+const drawer = new GLDrawer('#js-hamburger', '#js-global-navi');
+drawer.init();

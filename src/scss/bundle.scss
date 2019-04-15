@@ -1,5 +1,7 @@
+@charset "UTF-8";
 @import "../../node_modules/minireset.css/minireset.min.css";
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "~sass-mq/mq";
 
 @import "config/variable";
 @import "config/playground";
@@ -19,8 +21,16 @@
 @import "components/alert";
 @import "components/list";
 @import "components/header";
+@import "components/hamburger";
+@import "components/global-navi";
+@import "components/navi-menu";
 
 @import "layout/container";
 @import "layout/section";
 @import "layout/grid";
 @import "layout/header";
+
+.ndpl-component__sample {
+  position: relative;
+  overflow: hidden;
+}

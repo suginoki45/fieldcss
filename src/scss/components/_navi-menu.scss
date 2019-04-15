@@ -1,0 +1,10 @@
+.#{$prefix} {
+  &-navi-menu {
+
+    &__item {
+      a {
+        color: $white;
+      }
+    }
+  }
+}
