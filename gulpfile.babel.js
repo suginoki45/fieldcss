@@ -118,10 +118,6 @@ export const scripts = () => {
 					]
 				},
         mode: PRODUCTION ? 'production' : 'development',
-        devServer: {
-          contentBase: './',
-          open: true
-        },
 				devtool: ! PRODUCTION ? 'inline-source-map' : false,
 				output: {
 					filename: 'bundle.js'
@@ -137,6 +133,7 @@ export const scripts = () => {
  */
 export const watchForChanges = () => {
   watch( 'src/scss/**/*.scss', styles );
+  watch( 'src/js/**/*.js', scripts );
 }
 
 export const dev = series(
