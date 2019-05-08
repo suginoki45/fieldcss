@@ -1,4 +1,3 @@
-import GLDrawer from './drawer.js';
+import LegitDrawer from './drawer.js';
 
-const drawer = new GLDrawer('#js-hamburger', '#js-global-navi');
-drawer.init();
+new LegitDrawer();

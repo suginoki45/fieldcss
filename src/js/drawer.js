@@ -1,72 +1,55 @@
-class GLDrawer {
-  constructor(trigger, target) {
-    this.trigger = trigger;
-    this.target = target;
-    this.activeClass = 'is-active';
-    this.clientWidth = document.body.clientWidth;
-    this.noScrollBarWidth = document.body.clientWidth;
-    this.diff = 0;
-  }
-
-  init() {
+class LegitDrawer {
+  constructor() {
+    this.defaults = {
+      selectors: {
+        header: '#js-header',
+        trigger: '#js-hamburger',
+        target: '#js-global-navi',
+        activeClass: 'is-active'
+      }
+    }
     this.handleEvents();
   }
 
   handleEvents() {
-    document.querySelector(this.trigger).addEventListener('click', (event) => this.toggle(), false);
+    const selectors = this.defaults.selectors;
+
+    document.querySelector(selectors.trigger).addEventListener('click', (event) => this.toggle(), false);
   }
 
   toggle() {
+    const selectors = this.defaults.selectors;
+
     event.preventDefault();
 
-    if (event.currentTarget.classList.contains(this.activeClass)) {
-      this.setOpenDrawer.call(this);
-
+    if (event.currentTarget.classList.contains(selectors.activeClass)) {
+      this.close.call(this);
     } else {
-      this.bugFixForIE.call(this);
-      this.setCloseDrawer.call(this);
+      this.open.call(this);
     }
   }
 
-  setOpenDrawer() {
-    document.body.classList.remove('hamburger-active');
+  open() {
+    const selectors = this.defaults.selectors;
 
-      /**
-       * bodyタグのoverflowプロパティとpaddingを削除
-       */
-      document.body.removeAttribute('style');
-
-
-      event.currentTarget.classList.remove(this.activeClass);
-      document.querySelector(this.target).classList.remove(this.activeClass);
-      event.currentTarget
-        .closest('#js-header')
-        .classList.remove(this.activeClass);
-  }
-
-  setCloseDrawer() {
-    document.body.classList.add('hamburger-active');
-    event.currentTarget.classList.add(this.activeClass);
-    document.querySelector(this.target).classList.add(this.activeClass);
+    event.currentTarget.classList.add(selectors.activeClass);
+    document.querySelector(selectors.target).classList.add(selectors.activeClass);
     event.currentTarget
-      .closest('#js-header')
-      .classList.add(this.activeClass);
+      .closest(selectors.header)
+      .classList.add(selectors.activeClass);
   }
 
-  /**
-   * IEでスクロールバーの影響で表示がガタつく事象に対応
-   */
-  bugFixForIE() {
-    this.clientWidth = document.body.clientWidth;
-    document.body.style.overflow = 'hidden';
+  close() {
+    const selectors = this.defaults.selectors;
 
-    this.noScrollBarWidth = document.body.clientWidth;
-    this.diff = this.noScrollBarWidth - this.clientWidth;
+    document.body.removeAttribute('style');
 
-    if (0 < this.diff) {
-      document.querySelector('#js-header').style.paddingRight = 30 + this.diff + 'px';
-    }
+    event.currentTarget.classList.remove(selectors.activeClass);
+    document.querySelector(selectors.target).classList.remove(selectors.activeClass);
+    event.currentTarget
+      .closest(selectors.header)
+      .classList.remove(selectors.activeClass);
   }
 }
 
-export default GLDrawer;
+export default LegitDrawer;
