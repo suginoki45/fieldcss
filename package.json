@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Simple CSS framework for high quolity designs.",
   "scripts": {
-    "start": "gulp",
-    "server": "webpack-dev-server"
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
